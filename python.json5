@@ -1,0 +1,24 @@
+{
+  "description": "Python",
+    
+  "customManagers": [
+    {
+      // Update the Python version for the actions/setup-python action
+      "customType": "regex",
+      "fileMatch": [".github/workflows/.*"],
+      "matchStrings": ["python-version: \"(?<currentValue>\\S+)\"\\n"],
+      "depNameTemplate": "python",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker",
+    },
+
+    {
+      "customType": "regex",                                                                                                                                 
+      "fileMatch": ["^pyproject.toml$"],
+      "matchStrings": ["python = \"\\^(?<currentValue>\\S+)\"\\n"],
+      "depNameTemplate": "python",   
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker",
+    },
+  ],
+}
