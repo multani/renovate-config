@@ -21,4 +21,14 @@
       "versioningTemplate": "docker",
     },
   ],
+
+  "packageRules": [
+    {
+      // Pytest dependencies sometimes are bound to each other.
+      // They can all be automerged if tests are passing.
+      "matchPackagePrefixes": ["pytest"],
+      "groupName": "pytest",
+      "automerge": true,
+    },
+  ]
 }
