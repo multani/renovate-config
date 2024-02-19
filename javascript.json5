@@ -1,0 +1,11 @@
+{
+  "description": "Javascript",
+
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["stylelint"],
+      "groupName": "stylelint",
+      "automerge": true,
+    },
+  ],
+}
