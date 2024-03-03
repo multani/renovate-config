@@ -3,6 +3,7 @@
     "github>multani/renovate-config//base.json5",
     "github>multani/renovate-config//python.json5",
     "github>multani/renovate-config//rate-limit.json5",
+    "github>multani/renovate-config//terraform.json5",
 
     "config:recommended"
   ]
