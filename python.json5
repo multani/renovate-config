@@ -30,5 +30,15 @@
       "groupName": "pytest",
       "automerge": true,
     },
-  ]
+    {
+      // OpenTelemetry packages are often tight together and needs to be updated as a single update.
+      "matchPackagePrefixes": ["opentelemetry-"],                                                                                                            
+      "groupName": "opentelemetry",
+    },
+    {
+      // These packages are still marked as "beta" and not considered as stable by Renovate :(
+      "matchPackagePrefixes": ["opentelemetry-instrumentation-"],
+      "ignoreUnstable": false, // allow 0.42bx
+    },
+  ],
 }
