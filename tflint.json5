@@ -1,0 +1,20 @@
+{
+  "description": "tflint",
+
+  "customManagers": [
+    {
+      "fileMatch": ["\\.tool-versions$"],
+      "matchStrings": ["(^|\\n)tflint (?<currentValue>\\S+)"],
+      "depNameTemplate": "terraform-linters/tflint",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>\\S+)"
+    },
+    {
+      "fileMatch": ["^\\.github/workflows/.+\\.yml$"],
+      "matchStrings": ["tflint_version: (?<currentValue>\\S+)"],
+      "depNameTemplate": "terraform-linters/tflint",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^(?<version>\\S+)"
+    }
+  ],
+}
