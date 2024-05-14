@@ -30,7 +30,7 @@
     // https://github.com/renovatebot/renovate/discussions/19022
     {
       "matchManagers": ["asdf"],
-      "matchPackagePatterns": ["^terraform$"],
+      "matchDepPatterns": ["^terraform$"],
       "enabled": false,
     },
   ],
