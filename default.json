@@ -8,6 +8,8 @@
     "github>multani/renovate-config//terraform.json5",
     "github>multani/renovate-config//tflint.json5",
 
+    "github>multani/renovate-config//my-stuff.json5",
+
     "config:recommended"
   ]
 }

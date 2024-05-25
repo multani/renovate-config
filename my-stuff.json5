@@ -1,0 +1,15 @@
+{
+  "description": "My own dependencies",
+
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackagePrefixes": [
+        // Something like europe-west3-docker.pkg.dev/multani-something/
+        "^[a-z0-9\-]+-docker\.pkg\.dev/multani.+/",
+      ],
+      // Schedule as soon as possible my own Docker images updates
+      "schedule": ["at any time"],
+    },
+  ],
+}
