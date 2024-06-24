@@ -4,7 +4,7 @@
     "github>multani/renovate-config//docker.json5",
     "github>multani/renovate-config//javascript.json5",
     "github>multani/renovate-config//python.json5",
-    "github>multani/renovate-config//rate-limit.json5",
+    "github>multani/renovate-config//schedule.json5",
     "github>multani/renovate-config//terraform.json5",
     "github>multani/renovate-config//tflint.json5",
 

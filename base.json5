@@ -2,7 +2,6 @@
   "description": "My default settings",
 
   "dependencyDashboard": true,
-  "schedule": ["after 6am on monday"],
 
   "lockFileMaintenance": {
     "enabled": true,

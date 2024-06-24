@@ -1,0 +1,17 @@
+{
+  "description": "Configures Renovate the rates at which it proposes updates",
+  // The intention here is to:
+  // - Not create too many updates at the same time: when multiple updates are
+  //   proposed at the same time, a single auto-merge forcefully rebases all the
+  //   other updates and retriggers all the GHA builds, making it kind of
+  //   expensive in term of GHA costs.
+  // - Propose updates early: by not having too many updates at the same time,
+  //   they are being dispatched over a longer period of time.
+
+  // Consider any days to open PRs
+  "schedule": ["at any time"],
+
+  // Try not to overwork GitHub Actions too much with concurrent PRs.
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 5,
+}

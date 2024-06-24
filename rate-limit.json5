@@ -1,6 +1,0 @@
-{
-  "description": "Less rate-limiting to have updates faster",
-
-  "prConcurrentLimit": 50,
-  "prHourlyLimit": 50,
-}
