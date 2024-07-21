@@ -20,6 +20,13 @@
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker",
     },
+
+    {
+      "customType": "regex",                                                                                                                                 
+      "fileMatch": ["Dockerfile"],
+      "matchStrings": ["pip install (?<depName>[^=]+?)==(?<currentValue>\\S+)"],
+      "datasourceTemplate": "pypi",
+    },
   ],
 
   "packageRules": [
