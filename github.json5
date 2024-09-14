@@ -1,0 +1,6 @@
+{
+  "description": "github",
+
+  "automergeType": "pr",
+  "platformAutomerge": true,
+}

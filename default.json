@@ -1,7 +1,10 @@
 {
   "extends": [
+    "config:recommended",
+
     "github>multani/renovate-config//base.json5",
     "github>multani/renovate-config//docker.json5",
+    "github>multani/renovate-config//github.json5",
     "github>multani/renovate-config//javascript.json5",
     "github>multani/renovate-config//python.json5",
     "github>multani/renovate-config//schedule.json5",
@@ -10,6 +13,6 @@
 
     "github>multani/renovate-config//my-stuff.json5",
 
-    "config:recommended"
+    "github>multani/renovate-config//zzz-weekly-updates.json5"
   ]
 }

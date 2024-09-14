@@ -1,0 +1,18 @@
+{
+  // This file should come last, to override all the rest.
+  "description": "Update everything at once, every weeks",
+
+  "schedule": ["every monday"],
+
+  "packageRules": [
+    {
+      // Group most of the updates all together, one a week
+      "matchUpdataTypes": [
+        "minor",
+        "patch",
+      ],
+      "groupName": "non-major",
+      "automerge": true,
+    },
+  ],
+}
