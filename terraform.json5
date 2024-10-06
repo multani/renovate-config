@@ -25,13 +25,4 @@
       "extractVersionTemplate": "^v(?<version>\\S+)"
     },
   ],
-
-  "packageRules": [
-    // https://github.com/renovatebot/renovate/discussions/19022
-    {
-      "matchManagers": ["asdf"],
-      "matchDepPatterns": ["^terraform$"],
-      "enabled": false,
-    },
-  ],
 }
