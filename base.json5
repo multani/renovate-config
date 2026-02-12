@@ -1,6 +1,4 @@
 {
-  "description": "My default settings",
-
   "dependencyDashboard": true,
 
   "lockFileMaintenance": {
